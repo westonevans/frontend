@@ -15,11 +15,19 @@ function App() {
         <Navbar />
         <div>
           <Routes>
+            <Route path="/" element={<LandingPage />} />
             <Route path="/movies" element={<MovieList />} />
             <Route path="/podcasts" element={<Podcasts />} />
           </Routes>
         </div>
       </Router>
+    </div>
+  );
+}
+
+function LandingPage() {
+  return (
+    <div className="landing-page">
       <div className="App">
         <TopBanner saying="Joel's Movie Site -Home" />
       </div>
