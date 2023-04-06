@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Podcasts() {
+function MyPodcasts() {
   return (
     <div>
       <h1>This is my podcasts page</h1>
@@ -10,4 +10,4 @@ function Podcasts() {
   );
 }
 
-export default Podcasts;
+export default MyPodcasts;

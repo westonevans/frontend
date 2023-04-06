@@ -4,20 +4,8 @@ import { Link } from 'react-router-dom';
 
 const MD = data.MovieData;
 
-function MovieList() {
+function OldMovieList() {
   const [listOMovies] = useState(MD);
-
-  // const addMovie = () => {
-  //   setListOMovies([
-  //       ...MD,
-  //       {
-  //           Category: 'Action/Adventure',
-  //           Title: 'Batman Returns',
-  //           Year: 1992,
-  //           Director: 'Tim Burton',
-  //           Rating: 'PG-13',
-  //       }
-  //       ]);
 
   return (
     <>
@@ -55,4 +43,4 @@ function MovieList() {
     </>
   );
 }
-export default MovieList;
+export default OldMovieList;

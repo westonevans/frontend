@@ -1,23 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
-import TopBanner from './Blah';
-import MovieList from './Movies';
-import Podcasts from './Podcasts';
-import Navbar from './Navbar';
+import TopBanner from '../Blah';
+import MyMovieList from '../MovieList';
+import MyPodcasts from '../Podcasts';
+import Navbar from '../Navbar';
+import Header from '../Header';
 import { Link } from 'react-router-dom';
 
 function App() {
   return (
     <div>
+      <Header slogan="Only the best movies" />
       <Router>
         <Navbar />
         <div>
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/movies" element={<MovieList />} />
-            <Route path="/podcasts" element={<Podcasts />} />
+            <Route path="/movies" element={<MyMovieList />} />
+            <Route path="/podcasts" element={<MyPodcasts />} />
           </Routes>
         </div>
       </Router>
